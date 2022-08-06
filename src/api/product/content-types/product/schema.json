@@ -41,6 +41,12 @@
     },
     "available": {
       "type": "boolean"
+    },
+    "bids": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::bid.bid",
+      "mappedBy": "product"
     }
   }
 }
